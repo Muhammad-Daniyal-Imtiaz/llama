@@ -1,0 +1,202 @@
+Couldn't find 'C:\Users\muham\.ollama\id_ed25519'. Generating new private key.
+Your new public key is: 
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHUoFq6q+K5BNeOcSMOnlxorXPauPhjzGVu6VlFwXfr6
+
+2024/11/26 17:41:46 routes.go:1197: INFO server config env="map[CUDA_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_DEBUG:false OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_INTEL_GPU:false OLLAMA_KEEP_ALIVE:5m0s OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:C:\\Users\\muham\\.ollama\\models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:0 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://*] OLLAMA_SCHED_SPREAD:false OLLAMA_TMPDIR: ROCR_VISIBLE_DEVICES:]"
+time=2024-11-26T17:41:46.810+05:00 level=INFO source=images.go:753 msg="total blobs: 0"
+time=2024-11-26T17:41:46.811+05:00 level=INFO source=images.go:760 msg="total unused blobs removed: 0"
+time=2024-11-26T17:41:46.812+05:00 level=INFO source=routes.go:1248 msg="Listening on 127.0.0.1:11434 (version 0.4.5)"
+time=2024-11-26T17:41:46.813+05:00 level=INFO source=common.go:49 msg="Dynamic LLM libraries" runners="[cuda_v12 rocm cpu cpu_avx cpu_avx2 cuda_v11]"
+time=2024-11-26T17:41:46.813+05:00 level=INFO source=gpu.go:221 msg="looking for compatible GPUs"
+time=2024-11-26T17:41:46.813+05:00 level=INFO source=gpu_windows.go:167 msg=packages count=1
+time=2024-11-26T17:41:46.813+05:00 level=INFO source=gpu_windows.go:214 msg="" package=0 cores=4 efficiency=0 threads=4
+time=2024-11-26T17:41:48.928+05:00 level=INFO source=gpu.go:386 msg="no compatible GPUs were discovered"
+time=2024-11-26T17:41:48.928+05:00 level=INFO source=types.go:123 msg="inference compute" id=0 library=cpu variant=avx2 compute="" driver=0.0 name="" total="7.9 GiB" available="2.9 GiB"
+[GIN] 2024/11/26 - 17:44:45 | 200 |            0s |       127.0.0.1 | HEAD     "/"
+time=2024-11-26T17:44:49.027+05:00 level=INFO source=download.go:175 msg="downloading 74701a8c35f6 in 14 100 MB part(s)"
+time=2024-11-26T17:55:11.791+05:00 level=INFO source=download.go:175 msg="downloading 966de95ca8a6 in 1 1.4 KB part(s)"
+time=2024-11-26T17:55:15.507+05:00 level=INFO source=download.go:175 msg="downloading fcc5a6bec9da in 1 7.7 KB part(s)"
+time=2024-11-26T17:55:18.205+05:00 level=INFO source=download.go:175 msg="downloading a70ff7e570d9 in 1 6.0 KB part(s)"
+time=2024-11-26T17:55:21.680+05:00 level=INFO source=download.go:175 msg="downloading 4f659a1e86d7 in 1 485 B part(s)"
+[GIN] 2024/11/26 - 17:55:29 | 200 |        10m44s |       127.0.0.1 | POST     "/api/pull"
+[GIN] 2024/11/26 - 17:57:29 | 200 |            0s |       127.0.0.1 | HEAD     "/"
+[GIN] 2024/11/26 - 17:57:29 | 404 |       481.1µs |       127.0.0.1 | POST     "/api/show"
+[GIN] 2024/11/26 - 17:57:31 | 200 |    1.5072141s |       127.0.0.1 | POST     "/api/pull"
+[GIN] 2024/11/26 - 17:58:09 | 200 |            0s |       127.0.0.1 | HEAD     "/"
+[GIN] 2024/11/26 - 17:58:09 | 200 |      1.6539ms |       127.0.0.1 | GET      "/api/tags"
+[GIN] 2024/11/26 - 17:58:19 | 200 |            0s |       127.0.0.1 | HEAD     "/"
+[GIN] 2024/11/26 - 17:58:19 | 200 |     28.0367ms |       127.0.0.1 | POST     "/api/show"
+time=2024-11-26T17:58:19.594+05:00 level=INFO source=server.go:105 msg="system memory" total="7.9 GiB" free="3.1 GiB" free_swap="2.8 GiB"
+time=2024-11-26T17:58:19.595+05:00 level=INFO source=memory.go:343 msg="offload to cpu" layers.requested=-1 layers.model=17 layers.offload=0 layers.split="" memory.available="[3.1 GiB]" memory.gpu_overhead="0 B" memory.required.full="2.1 GiB" memory.required.partial="0 B" memory.required.kv="256.0 MiB" memory.required.allocations="[2.1 GiB]" memory.weights.total="1.2 GiB" memory.weights.repeating="976.1 MiB" memory.weights.nonrepeating="266.2 MiB" memory.graph.full="544.0 MiB" memory.graph.partial="554.3 MiB"
+time=2024-11-26T17:58:19.603+05:00 level=INFO source=server.go:383 msg="starting llama server" cmd="C:\\Users\\muham\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\runners\\cpu_avx2\\ollama_llama_server.exe --model C:\\Users\\muham\\.ollama\\models\\blobs\\sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --ctx-size 8192 --batch-size 512 --threads 4 --no-mmap --parallel 4 --port 58838"
+time=2024-11-26T17:58:22.693+05:00 level=INFO source=sched.go:449 msg="loaded runners" count=1
+time=2024-11-26T17:58:22.693+05:00 level=INFO source=server.go:562 msg="waiting for llama runner to start responding"
+time=2024-11-26T17:58:22.693+05:00 level=INFO source=server.go:596 msg="waiting for server to become available" status="llm server error"
+time=2024-11-26T17:58:22.716+05:00 level=INFO source=runner.go:916 msg="starting go runner"
+time=2024-11-26T17:58:22.717+05:00 level=INFO source=runner.go:917 msg=system info="AVX = 1 | AVX_VNNI = 0 | AVX2 = 1 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | AVX512_BF16 = 0 | FMA = 1 | NEON = 0 | SVE = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | RISCV_VECT = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | MATMUL_INT8 = 0 | LLAMAFILE = 1 | cgo(clang)" threads=4
+time=2024-11-26T17:58:22.718+05:00 level=INFO source=.:0 msg="Server listening on 127.0.0.1:58838"
+llama_model_loader: loaded meta data with 30 key-value pairs and 147 tensors from C:\Users\muham\.ollama\models\blobs\sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Llama 3.2 1B Instruct
+llama_model_loader: - kv   3:                           general.finetune str              = Instruct
+llama_model_loader: - kv   4:                           general.basename str              = Llama-3.2
+llama_model_loader: - kv   5:                         general.size_label str              = 1B
+llama_model_loader: - kv   6:                               general.tags arr[str,6]       = ["facebook", "meta", "pytorch", "llam...
+llama_model_loader: - kv   7:                          general.languages arr[str,8]       = ["en", "de", "fr", "it", "pt", "hi", ...
+llama_model_loader: - kv   8:                          llama.block_count u32              = 16
+llama_model_loader: - kv   9:                       llama.context_length u32              = 131072
+llama_model_loader: - kv  10:                     llama.embedding_length u32              = 2048
+llama_model_loader: - kv  11:                  llama.feed_forward_length u32              = 8192
+llama_model_loader: - kv  12:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv  13:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  14:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv  15:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  16:                 llama.attention.key_length u32              = 64
+llama_model_loader: - kv  17:               llama.attention.value_length u32              = 64
+llama_model_loader: - kv  18:                          general.file_type u32              = 7
+llama_model_loader: - kv  19:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  20:                 llama.rope.dimension_count u32              = 64
+llama_model_loader: - kv  21:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  22:                         tokenizer.ggml.pre str              = llama-bpe
+llama_model_loader: - kv  23:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  24:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  25:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  26:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  27:                tokenizer.ggml.eos_token_id u32              = 128009
+llama_model_loader: - kv  28:                    tokenizer.chat_template str              = {{- bos_token }}\n{%- if custom_tools ...
+llama_model_loader: - kv  29:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   34 tensors
+llama_model_loader: - type q8_0:  113 tensors
+time=2024-11-26T17:58:22.957+05:00 level=INFO source=server.go:596 msg="waiting for server to become available" status="llm server loading model"
+llm_load_vocab: special tokens cache size = 256
+llm_load_vocab: token to piece cache size = 0.7999 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: vocab_only       = 0
+llm_load_print_meta: n_ctx_train      = 131072
+llm_load_print_meta: n_embd           = 2048
+llm_load_print_meta: n_layer          = 16
+llm_load_print_meta: n_head           = 32
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_rot            = 64
+llm_load_print_meta: n_swa            = 0
+llm_load_print_meta: n_embd_head_k    = 64
+llm_load_print_meta: n_embd_head_v    = 64
+llm_load_print_meta: n_gqa            = 4
+llm_load_print_meta: n_embd_k_gqa     = 512
+llm_load_print_meta: n_embd_v_gqa     = 512
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 8192
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_ctx_orig_yarn  = 131072
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: ssm_dt_b_c_rms   = 0
+llm_load_print_meta: model type       = 1B
+llm_load_print_meta: model ftype      = Q8_0
+llm_load_print_meta: model params     = 1.24 B
+llm_load_print_meta: model size       = 1.22 GiB (8.50 BPW) 
+llm_load_print_meta: general.name     = Llama 3.2 1B Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128009 '<|eot_id|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOM token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128009 '<|eot_id|>'
+llm_load_print_meta: max token length = 256
+llm_load_tensors: ggml ctx size =    0.07 MiB
+llm_load_tensors:        CPU buffer size =  1518.57 MiB
+llama_new_context_with_model: n_ctx      = 8192
+llama_new_context_with_model: n_batch    = 2048
+llama_new_context_with_model: n_ubatch   = 512
+llama_new_context_with_model: flash_attn = 0
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:        CPU KV buffer size =   256.00 MiB
+llama_new_context_with_model: KV self size  =  256.00 MiB, K (f16):  128.00 MiB, V (f16):  128.00 MiB
+llama_new_context_with_model:        CPU  output buffer size =     1.99 MiB
+llama_new_context_with_model:        CPU compute buffer size =   544.01 MiB
+llama_new_context_with_model: graph nodes  = 518
+llama_new_context_with_model: graph splits = 1
+time=2024-11-26T17:58:24.794+05:00 level=INFO source=server.go:601 msg="llama runner started in 2.10 seconds"
+[GIN] 2024/11/26 - 17:58:24 | 200 |    5.2756356s |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2024/11/26 - 17:59:22 | 200 |   43.3654824s |       127.0.0.1 | POST     "/api/chat"
+llama_model_loader: loaded meta data with 30 key-value pairs and 147 tensors from C:\Users\muham\.ollama\models\blobs\sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Llama 3.2 1B Instruct
+llama_model_loader: - kv   3:                           general.finetune str              = Instruct
+llama_model_loader: - kv   4:                           general.basename str              = Llama-3.2
+llama_model_loader: - kv   5:                         general.size_label str              = 1B
+llama_model_loader: - kv   6:                               general.tags arr[str,6]       = ["facebook", "meta", "pytorch", "llam...
+llama_model_loader: - kv   7:                          general.languages arr[str,8]       = ["en", "de", "fr", "it", "pt", "hi", ...
+llama_model_loader: - kv   8:                          llama.block_count u32              = 16
+llama_model_loader: - kv   9:                       llama.context_length u32              = 131072
+llama_model_loader: - kv  10:                     llama.embedding_length u32              = 2048
+llama_model_loader: - kv  11:                  llama.feed_forward_length u32              = 8192
+llama_model_loader: - kv  12:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv  13:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  14:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv  15:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  16:                 llama.attention.key_length u32              = 64
+llama_model_loader: - kv  17:               llama.attention.value_length u32              = 64
+llama_model_loader: - kv  18:                          general.file_type u32              = 7
+llama_model_loader: - kv  19:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  20:                 llama.rope.dimension_count u32              = 64
+llama_model_loader: - kv  21:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  22:                         tokenizer.ggml.pre str              = llama-bpe
+llama_model_loader: - kv  23:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  24:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  25:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  26:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  27:                tokenizer.ggml.eos_token_id u32              = 128009
+llama_model_loader: - kv  28:                    tokenizer.chat_template str              = {{- bos_token }}\n{%- if custom_tools ...
+llama_model_loader: - kv  29:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   34 tensors
+llama_model_loader: - type q8_0:  113 tensors
+llm_load_vocab: special tokens cache size = 256
+llm_load_vocab: token to piece cache size = 0.7999 MB
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: vocab_only       = 1
+llm_load_print_meta: model type       = ?B
+llm_load_print_meta: model ftype      = all F32
+llm_load_print_meta: model params     = 1.24 B
+llm_load_print_meta: model size       = 1.22 GiB (8.50 BPW) 
+llm_load_print_meta: general.name     = Llama 3.2 1B Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128009 '<|eot_id|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_print_meta: EOM token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128008 '<|eom_id|>'
+llm_load_print_meta: EOG token        = 128009 '<|eot_id|>'
+llm_load_print_meta: max token length = 256
+llama_model_load: vocab only - skipping tensors
+[GIN] 2024/11/26 - 18:00:00 | 200 |   27.8712335s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2024/11/26 - 18:01:13 | 200 |   33.2377996s |       127.0.0.1 | POST     "/api/chat"
